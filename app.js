@@ -85,14 +85,15 @@ const createSlider = () => {
   imagesArea.style.display = 'none';
   const primaryDuration = document.getElementById('duration').value;
 
+
   let duration = 1000;
 
   if (primaryDuration < 0 ) {
     duration = -1 * primaryDuration; 
-  } else if (primaryDuration < 0) {
+  } else if (primaryDuration > 0) {
     duration = primaryDuration;
   } 
-   
+   console.log(duration)
 
   // const duration = document.getElementById('duration').value || 1000;
   sliders.forEach(slide => {
