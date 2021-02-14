@@ -83,21 +83,16 @@ const createSlider = () => {
   document.querySelector('.main').style.display = 'block';
   // hide image aria
   imagesArea.style.display = 'none';
-
-  //my code start
   const primaryDuration = document.getElementById('duration').value;
 
   let duration = 1000;
-  console.log(primaryDuration)
+
   if (primaryDuration < 0 ) {
     duration = -1 * primaryDuration; 
   } else if (primaryDuration < 0) {
     duration = primaryDuration;
   } 
    
-  
-  console.log(duration);
-//my code end
 
   // const duration = document.getElementById('duration').value || 1000;
   sliders.forEach(slide => {
@@ -170,9 +165,10 @@ sliderBtn.addEventListener('click', function () {
   createSlider()
 })
 
+
+//spinner loading function
 const loadingSpinner = () => {
    const spinner = document.getElementById('loadingSpinner');
   spinner.classList.toggle('d-none');
 }
 
-// loadingSpinner();
