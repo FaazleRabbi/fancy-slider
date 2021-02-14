@@ -93,7 +93,7 @@ const createSlider = () => {
   } else if (primaryDuration > 0) {
     duration = primaryDuration;
   } 
-   console.log(duration)
+   
 
   sliders.forEach(slide => {
     let item = document.createElement('div')
@@ -153,7 +153,7 @@ input.addEventListener("keyup", function(event) {
 
 //search button click
 searchBtn.addEventListener('click', function () {
-  console.log('clicked')
+
   document.querySelector('.main').style.display = 'none';
   clearInterval(timer);
   const search = document.getElementById('search');
